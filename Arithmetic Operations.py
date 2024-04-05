@@ -10,8 +10,9 @@ z2 = tensor.mul(tensor)
 z3 = torch.rand_like(tensor)
 torh.mul(tensor, tensor, out=z3)
 
-" tensor([[1., 0., 1., 1.],
+""
+tensor([[1., 0., 1., 1.],
         [1., 0., 1., 1.],
         [1., 0., 1., 1.],
         [1., 0., 1., 1.]])
-"
+""
