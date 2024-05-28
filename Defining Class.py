@@ -14,3 +14,7 @@ class NeuralNetwork(nn.Module):
       x = self.flatten(x)
       logits = self.linear_relu_stack(x)
       return logits
+      
+# We create an instance of NeuralNetwork, and move it to the device, and print its structure.
+model = NeuralNetwork().to(device)
+print(model)
