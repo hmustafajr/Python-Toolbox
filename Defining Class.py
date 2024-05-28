@@ -19,9 +19,11 @@ class NeuralNetwork(nn.Module):
 model = NeuralNetwork().to(device)
 print(model)
 
-# To use the model, we pass it the input data. This executes the model's forward, along with some background operations.
-# However, do not call model.forward() directly! Calling the model on the input returns a 10-dimensional tensor with raw predicted values for each class.
-# We get the prediction densities by passing it through an instance of the nn.Softmax.
+'''
+To use the model, we pass it the input data. This executes the model's forward, along with some background operations.
+However, do not call model.forward() directly! Calling the model on the input returns a 10-dimensional tensor with raw predicted values for each class.
+We get the prediction densities by passing it through an instance of the nn.Softmax.
+'''
 
 X = torch.rand(1, 28, 28, device=device)
 logits = model(x)
